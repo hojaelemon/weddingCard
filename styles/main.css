@@ -10151,7 +10151,7 @@ body {
 .ww-home-page {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('../images/wed_day.jpg') no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   background-position: 50%;
   height: 100vh;
   min-height: 480px;
@@ -10428,6 +10428,7 @@ body {
 /* Common Style */
 .ww-title {
   font-family: 'Great Vibes', cursive;
+    white-space: nowrap;
 }
 
 .ww-section {
