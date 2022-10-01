@@ -10150,7 +10150,7 @@ body {
 /* Home Page Style */
 .ww-home-page {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('../images/IMG_0130.JPG') no-repeat center center;
+    url('../images/wed_day.jpg') no-repeat center center;
   background-size: cover;
   background-position: 50%;
   height: 100vh;
@@ -10172,6 +10172,8 @@ body {
   max-width: 600px;
   text-align: center;
   z-index: 999;
+  position: absolute;
+  bottom: 0;
 }
 
 .ww-home-page .ww-wedding-announcement img {
@@ -10290,6 +10292,10 @@ body {
 .ww-photo-gallery .ww-gallery {
   min-height: 500px;
 }
+.ww-gift-section {
+  text-shadow: 3px 3px 3px #000;
+}
+
 
 .ww-gift-section .ww-gift {
   min-height: 100px;
