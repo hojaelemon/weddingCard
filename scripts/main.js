@@ -1,5 +1,6 @@
 // Add your javascript here
 // Don't forget to add it into respective layouts where this js file is needed
+
 $(document).ready(function () {
   $('#map-image').on('click')
   {
@@ -23,7 +24,9 @@ $(document).ready(function () {
 
     const myHeaders = new Headers()
     myHeaders.append('Content-Type', 'application/x-www-form-urlencoded')
+    myHeaders.append('Authorization', 'bearer xoxb-1867626096710-4151602539826-sCftoeEHtIeDVGvpfZdVZxu6')
     const raw = JSON.stringify({
+      channel: 'C01RWGX6X9S',
       text: '[' + present + ']' + name + ':' + message,
     })
     const requestOptions = {
@@ -33,7 +36,7 @@ $(document).ready(function () {
       redirect: 'follow',
     }
     fetch(
-      'https://hooks.slack.com/services/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',
+      'https://slack.com/api/chat.postMessage',
       requestOptions
     )
       .then(response => response.text())
