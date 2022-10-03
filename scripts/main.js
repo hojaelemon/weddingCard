@@ -33,7 +33,7 @@ $(document).ready(function () {
       redirect: 'follow',
     }
     fetch(
-      'https://hooks.slack.com/services/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',
+      'https://hooks.slack.com/services/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',
       requestOptions
     )
       .then(response => response.text())
