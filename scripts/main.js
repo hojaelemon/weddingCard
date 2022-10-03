@@ -24,9 +24,7 @@ $(document).ready(function () {
 
     const myHeaders = new Headers()
     myHeaders.append('Content-Type', 'application/x-www-form-urlencoded')
-    myHeaders.append('Authorization', 'bearer xoxb-1867626096710-4151602539826-sCftoeEHtIeDVGvpfZdVZxu6')
     const raw = JSON.stringify({
-      channel: 'C01RWGX6X9S',
       text: '[' + present + ']' + name + ':' + message,
     })
     const requestOptions = {
@@ -36,7 +34,7 @@ $(document).ready(function () {
       redirect: 'follow',
     }
     fetch(
-      'https://slack.com/api/chat.postMessage',
+      env.webhook,
       requestOptions
     )
       .then(response => response.text())
