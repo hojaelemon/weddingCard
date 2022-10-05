@@ -60,6 +60,7 @@
     <script type="text/javascript">
       function clickModal(id) {
         let name = document.getElementById(id).getAttribute('data-name')
+        console.log(name)
         let modal = ''
         if (document.getElementById(name).classList.contains('gift-selected')) {
           alert('이미 다른분께 예약되었습니다. 감사합니다!')
@@ -455,7 +456,7 @@
                         <i class="fa fa-search"></i>
                       </button>
                       <button
-                        id="가습기"
+                        id="가습기버튼"
                         class="btn btn-default gift-btn gift-send"
                         data-name="가습기"
                         onclick="clickModal(id)"
@@ -479,7 +480,7 @@
                         <i class="fa fa-search"></i>
                       </button>
                       <button
-                        id="스캡슐트"
+                        id="스캡슐트버튼"
                         class="btn btn-default gift-btn gift-send"
                         data-name="스캡슐트"
                         onclick="clickModal(id)"
@@ -503,7 +504,7 @@
                         <i class="fa fa-search"></i>
                       </button>
                       <button
-                        id="거울"
+                        id="거울버튼"
                         class="btn btn-default gift-btn gift-send"
                         data-name="거울"
                         onclick="clickModal(id)"
@@ -527,7 +528,7 @@
                         <i class="fa fa-search"></i>
                       </button>
                       <button
-                        id="나무도마"
+                        id="나무도마버튼"
                         class="btn btn-default gift-btn gift-send "
                         data-name="나무도마"
                         onclick="alert('다른분에게 예약된 선물입니다.');"
@@ -551,7 +552,7 @@
                         <i class="fa fa-search"></i>
                       </button>
                       <button
-                        id="스피커"
+                        id="스피커버튼"
                         class="btn btn-default gift-btn gift-send"
                         data-name="스피커"
                         onclick="clickModal(id)"
@@ -575,7 +576,7 @@
                         <i class="fa fa-search"></i>
                       </button>
                       <button
-                        id="테팔"
+                        id="테팔버튼"
                         class="btn btn-default gift-btn gift-send"
                         data-name="테팔"
                         onclick="clickModal(id)"
